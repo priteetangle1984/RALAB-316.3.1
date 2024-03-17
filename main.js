@@ -38,7 +38,7 @@ topMenuEl.style.height = "100%";
 topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 topMenuEl.classList.add("flex-around");
 
-// Part-------III
+// Part-------III--IV
 const nav = document.querySelector('nav')
 
 menuLinks.forEach((item) => {
@@ -48,5 +48,15 @@ menuLinks.forEach((item) => {
     nav.appendChild(newItem);
     console.log(newItem)
 })
+
+const subMenuEl = document.getElementById("sub-menu");
+subMenuEl.style.height = "100%";
+subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)';
+subMenuEl.classList.add("flex-around");
+subMenuEl.style.position = "absolute";
+subMenuEl.style.top = "0";
+
+const topMenuLinks = document.querySelectorAll('a');
+
 
 

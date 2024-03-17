@@ -1,4 +1,4 @@
-// Part-----II: Creating a Menu Bar
+//PART ----II-----Creating a Menu Bar
 
 
 var menuLinks = [
@@ -18,3 +18,12 @@ var menuLinks = [
     {text: 'sign out', href: '/account/signout'},
   ]},
 ];
+
+//Part--I--Select and cache the <main> element in a variable named mainEl.
+// Set the background color of mainEl to the value stored in the --main-bg CSS custom property.
+// Add a class of flex-ctr to mainEl.
+
+const mainEl = document.querySelector('main');
+mainEl.style.backgroundColor = 'var(--main-bg)';
+mainEl.innerHTML = '<h1>DOM Manipulation</h1>';
+mainEl.classList.add("flex-ctr");

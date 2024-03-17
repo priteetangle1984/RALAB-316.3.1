@@ -38,3 +38,15 @@ topMenuEl.style.height = "100%";
 topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 topMenuEl.classList.add("flex-around");
 
+// Part-------III
+const nav = document.querySelector('nav')
+
+menuLinks.forEach((item) => {
+    newItem = document.createElement('a');
+    newItem.textContent = item.text;
+    newItem.href = item.href;
+    nav.appendChild(newItem);
+    console.log(newItem)
+})
+
+
